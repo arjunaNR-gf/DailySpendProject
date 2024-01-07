@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 1rem 0;
-    position: relative;
 }
 
 @media screen and (max-width: 792px) {
