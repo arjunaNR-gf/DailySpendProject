@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/DailySpendProject/static/css/main.42a7e930.css",
-    "main.js": "/DailySpendProject/static/js/main.8587a0de.js",
+    "main.js": "/DailySpendProject/static/js/main.da4532fc.js",
     "static/js/787.194ae5ba.chunk.js": "/DailySpendProject/static/js/787.194ae5ba.chunk.js",
     "static/media/Montserrat-Medium.ttf": "/DailySpendProject/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
     "index.html": "/DailySpendProject/index.html",
     "main.42a7e930.css.map": "/DailySpendProject/static/css/main.42a7e930.css.map",
-    "main.8587a0de.js.map": "/DailySpendProject/static/js/main.8587a0de.js.map",
+    "main.da4532fc.js.map": "/DailySpendProject/static/js/main.da4532fc.js.map",
     "787.194ae5ba.chunk.js.map": "/DailySpendProject/static/js/787.194ae5ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.42a7e930.css",
-    "static/js/main.8587a0de.js"
+    "static/js/main.da4532fc.js"
   ]
 }
