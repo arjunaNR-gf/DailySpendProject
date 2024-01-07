@@ -53,7 +53,7 @@ const EntryPage=()=>{
     }
 
     const OnclickSubmit = () => {
-
+        alert('submition  clicked!')
         const idata: IMoney = { Amount: parseInt(inputField.amount), Date: new Date(inputField.date), Description: inputField.description.toUpperCase() }
         pushSpendMoney(idata).then(res => {
             if (res.data.result === "Saved") {
