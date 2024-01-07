@@ -1,0 +1,26 @@
+input{
+    width: min(100%,400px);
+    height: 25px;
+    padding: 1.2rem 1.5rem;
+    border-radius: 5px;
+    border: 1.3px solid rgb(86, 86, 86);
+    outline: none;
+    color: rgb(151, 9, 9);
+    text-transform: uppercase;
+    background-color: rgb(240, 237, 237);
+}
+input:hover{
+    cursor: pointer;
+}
+
+.input_full{
+    width: min(100%,400px);
+}
+
+.input_medium{
+    width: min(100%,170px);
+}
+
+.input_small{
+    width: min(100%,110px);
+}

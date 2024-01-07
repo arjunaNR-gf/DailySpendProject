@@ -1,0 +1,123 @@
+.calculation_box {
+    width: 700px;
+    height: 80vh;
+    background-color: rgb(182, 182, 186);
+    border: 2px solid rgb(159, 21, 21);
+    border-radius: 1rem;
+}
+
+
+.heading_text {
+    background-color: rgb(123, 25, 25);
+    padding: 10px;
+    /*border-radius: 25rem 0 0 25rem;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.heading_option_main {
+    width: 400px;
+
+}
+
+.heading_text ul li {
+    list-style: none;
+    color: rgb(198, 195, 195);
+    line-height: 250%;
+}
+
+.heading_text li:hover {
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+
+.heading_text ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.calculation_input_box {
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+}
+
+.form_divider {
+    display: flex;
+    align-items: self-start;
+    margin-top: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 792px) {
+    .calculation_box {
+        display: block;
+
+    }
+
+    .heading_text {
+        display: block;
+        line-height: 250%;
+    }
+
+    .heading_text ul {
+
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .calculation_box {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .calculation_box {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .heading_option_main {
+        width: 100%;
+    }
+
+    .form_divider {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .heading_option_main{
+        padding: 0.5rem;
+        background-color: rgb(97, 13, 13);
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .heading_option_main ul{
+        display: block;
+    }
+
+    .calculation_box {
+        padding-bottom:1rem ;
+        height: auto;
+    }
+}

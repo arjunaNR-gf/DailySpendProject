@@ -1,0 +1,38 @@
+.content_popup_box{
+    width: 400px;
+    height: 80px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid rgb(189, 239, 189);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+ 
+}
+
+.content_header{
+    color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(240, 232, 232);
+}
+
+.content_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(76, 71, 71);
+    line-height: 200%;
+}
+
+.content_info svg{
+    color: rgb(91, 139, 20);
+    font-weight: 700;
+}
+
+.content_info svg:hover{
+    cursor: pointer;
+}
+
+
+
