@@ -12,7 +12,7 @@ import HomePage from '../Home/HomePage';
 const CalculationEntryHome = () => {
     const headigList = ['Home','EntryMain', 'ViewData', 'Help', 'Profile']
 
-    const [route, setRoute] = useState<number>()
+    const [route, setRoute] = useState<number>(0)
 
     return (
         <>

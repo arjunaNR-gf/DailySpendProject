@@ -15,7 +15,7 @@ const Input: FC<IInput> = (props) => {
     return (
         <>
         <div style={{width:'100%',display:"flex",flexDirection:'column',alignItems:'start',lineHeight:'300%'}}>
-        {props.label != undefined ? <label>{props.label} </label> :''}
+        {props.label != undefined ? <label className="lb">{props.label} </label> :''}
             <input
                 type={props.type}
                 name={props.name}

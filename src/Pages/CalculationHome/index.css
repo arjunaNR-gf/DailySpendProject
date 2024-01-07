@@ -97,7 +97,15 @@ h3 {
 
     .heading_option_main {
         width: 100%;
+        border-radius:1rem ;
+        font-size: 16px;
     }
+
+    .heading_option_main ul{
+        font-size: 14px
+    }
+
+    
 
     .form_divider {
         display: flex;
