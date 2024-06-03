@@ -19,8 +19,11 @@ const CalculationEntryHome = () => {
         <>
 
             <div className="calculation_box">
-                <div className="heading_text">
+                <div className="nav--menu">
+                    <div className="heading_text">
                     <h3>{data.CalculationEntryHome.CalculationEntryHomeTitle}</h3>
+                    </div>
+                    
                     <div className='heading_option_main'>
 
                         <ul >

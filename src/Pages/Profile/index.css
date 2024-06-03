@@ -68,3 +68,15 @@
     width: 400px;
     height: 400px;
 }
+
+@media screen and (max-width: 580px) {
+    
+.profile--client--info,.profile--yearly.budget--remain-cal {
+    display: flex;
+    flex-direction: column !important;
+}
+.profile--home--client{
+    height: 100vh;
+}
+
+}
