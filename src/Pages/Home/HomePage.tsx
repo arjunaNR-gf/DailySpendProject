@@ -23,6 +23,7 @@ const CloseFun = () => {
             setNotification((PreveState:any)=>({...PreveState,activeStatus:false}))
         }).catch((error)=>{
             setNotification((PreveState:any)=>({...PreveState,activeStatus:true,subject:error}))
+            console.log(error)
         })
     }, [setVal])
 
