@@ -22,7 +22,7 @@ const CloseFun = () => {
             })
             setNotification((PreveState:any)=>({...PreveState,activeStatus:false}))
         }).catch((error)=>{
-            setNotification((PreveState:any)=>({...PreveState,activeStatus:true,subject:"Server(mode:offline)"}))
+            setNotification((PreveState:any)=>({...PreveState,activeStatus:true,subject:error}))
         })
     }, [setVal])
 
