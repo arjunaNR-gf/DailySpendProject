@@ -155,9 +155,6 @@ const EntryPage = () => {
         <>
             {notification.activeStatus && <Notification click={CloseFun} content={notification.subject} />}
             <div className='Entry_page_main'>
-
-                
-<h1>hello</h1>
                 <div className='hdst'>
                     <strong style={{ padding: '1rem', color: 'white', backgroundColor: '#073d51',borderRadius:"5px" }}>Last Update was on {lastupdate}</strong>
                 </div>

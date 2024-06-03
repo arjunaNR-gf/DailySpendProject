@@ -74,9 +74,9 @@
 .profile--client--info,.profile--yearly.budget--remain-cal {
     display: flex;
     flex-direction: column !important;
+    height: auto;
+    width: 100%;
 }
-.profile--home--client{
-    height: 100vh;
-}
+
 
 }
