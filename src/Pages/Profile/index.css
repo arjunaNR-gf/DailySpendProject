@@ -1,0 +1,70 @@
+.profile--home {
+    margin-top: 1rem;
+    min-width: 100px;
+    min-height: 300px;
+    background-color: transparent;
+}
+
+.profile--yearly {
+    width: 200px;
+    height: 200px;
+    background-color: var(--profile--box--color);
+    display: flex;
+    flex-direction: column;
+    line-height: 450%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.profile--yearly.budget--remain-cal{
+    width: 900px;
+    padding: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row !important;
+}
+
+
+
+.year--exspend {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--profile--box--year-box--color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    margin: 0 auto;
+}
+
+.profile--home--client {
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    height: 100px;
+    background-color: rgb(147, 164, 164);
+}
+
+.profile--home--client p {
+    font-size: 16px;
+}
+
+.profile--client--info {
+    justify-content: space-around;
+    border-radius: 6px;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: row;
+}
+.pi--chart-block{
+    margin-top: 2rem;
+    width: 400px;
+    height: 400px;
+}

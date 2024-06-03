@@ -1,0 +1,25 @@
+table{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(227, 221, 221);
+    text-align: justify;
+
+}
+
+thead{
+    background-color: rgb(230, 225, 225);
+    color: rgb(127, 125, 125);
+}
+
+td,th{
+    border-bottom: 1px solid gray;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    font-size: 11px;
+
+
+}
+
+tr{
+    border:  1px solid  rgb(227, 221, 221);
+}

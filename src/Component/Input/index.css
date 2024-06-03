@@ -1,28 +1,49 @@
 input{
     width: min(100%,400px);
-    height: 25px;
+    height: 44px;
     padding: 1.2rem 1.5rem;
     border-radius: 5px;
-    border: 1.3px solid rgb(86, 86, 86);
+    border: 1.6px solid #073d51;
     outline: none;
-    color: rgb(151, 9, 9);
+    color: var(--font--intput--color);
+    font-weight:  var(--fontweight--input);
     text-transform: uppercase;
     background-color: rgb(240, 237, 237);
+    font-size: 13.5px !important;
+    letter-spacing: 2px;
 }
+
+label{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--font--input--title);
+}
+
 input:hover{
     cursor: pointer;
 }
 
 .input_full{
-    width: min(100%,400px);
+    width: min(100%,500px);
 }
 
 .input_medium{
-    width: min(100%,170px);
+    width: min(100%,340px);
 }
 
 .input_small{
-    width: min(100%,110px);
+    width: min(100%,190px);
+}
+
+.input--dev{
+    transform: translateX(-200%);
+}
+
+.input--dev.active{
+    transition-duration: 5s;
+    transition-delay: 2s;
+    transform: translateX(2%);
 }
 
 @media screen and (max-width: 620px) {

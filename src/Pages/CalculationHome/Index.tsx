@@ -3,14 +3,15 @@ import { useState } from 'react';
 import { data } from '../../Services/api/DailySpendApi';
 import '../CalculationHome/index.css'
 import EntryPage from '../EntryPage/EntryPage';
-import ViewData from '../ViewData/ViewDataPage';
 import HomePage from '../Home/HomePage';
+import Trade from '../Trade/Trade';
+import Profile from '../Profile/Profile';
 
 
 
 
 const CalculationEntryHome = () => {
-    const headigList = ['Home','EntryMain', 'ViewData', 'Help', 'Profile']
+    const headigList = ['HOME', 'DAILY SPEND', 'TRADE', 'HELP', 'PROFILE']
 
     const [route, setRoute] = useState<number>(0)
 
@@ -24,12 +25,13 @@ const CalculationEntryHome = () => {
 
                         <ul >
                             {
-                                headigList.map((item, i) => {
-                                    return (
-                                        <>
-                                            <li key={i + 'header_list'} onClick={() => setRoute(i)}>{item}</li>
-                                        </>
-                                    )
+                                data.CalculationEntryHome.Navigation.map((item, i) => {
+                                    if (Boolean(item.active))
+                                        return (
+                                            <>
+                                                <li key={i + 'header_list'} onClick={() => setRoute(i)}>{item.name}</li>
+                                            </>
+                                        )
                                 })
                             }
                         </ul>
@@ -38,10 +40,10 @@ const CalculationEntryHome = () => {
 
 
                 <div className="calculation_input_box">
-                    {route === 0 ? <HomePage /> : route === 1 ? <EntryPage /> : route == 2 ? <ViewData /> : ''}
+                    {
+                        route === 0 ? <HomePage /> : route === 1 ? <EntryPage /> : route == 2 ? <Trade /> : route == 5 ? <Profile /> : ''
 
-
-
+                    }
                 </div>
 
             </div>

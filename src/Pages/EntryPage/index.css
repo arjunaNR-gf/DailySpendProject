@@ -1,0 +1,80 @@
+.form_divider--foot{
+    margin-top: 7rem;
+    background-color: var(--card--footer--color);
+    border-top: 1px solid rgb(181, 179, 179);
+    border-radius: 4px;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0.4rem;
+}
+
+.hdst{ 
+    width: 100%;
+    margin-top: 2rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius: 5px;
+}
+
+.Entry_page_main{
+overflow: hidden;
+padding: 2rem;
+width: 650px;
+background-color: var(--card--body--color);
+border: 1px solid rgb(164, 169, 171);
+box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+
+}
+
+.Number--pad{
+    background-color: aliceblue;
+    width: 157px;
+    height: auto;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    display: flex;
+    padding: 5px;
+}
+
+.Number--pad:hover{
+    cursor: pointer;
+}
+
+.pad--number--circle{
+    padding: 6px;
+}
+.pad--number--circle:hover{
+    padding: 6px;
+    background-color: rgb(223, 220, 220);
+
+}
+
+@media screen and (max-width: 890px) {
+    .Entry_page_main{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .Entry_page_main{
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .Entry_page_main{
+        width: 300px;
+    }
+
+}
+
+.input--enrtry--box{
+    width: inherit;
+    height: 30vh;
+    background-color:transparent;
+}
+

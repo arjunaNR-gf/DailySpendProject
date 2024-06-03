@@ -1,7 +1,28 @@
 @font-face {
   font-family: Montserrat;
-  src: url('./assests/font/Montserrat-Medium.ttf');
+  src: url('./assests/font/Poppins-Medium.ttf');
   font-weight: bolder;
+}
+:root{
+  --app--background: rgb(231, 231, 231);
+  --background-colour-page:white;
+  --card--header--color: #053343;
+  --card--body--color:rgb(216, 226, 226);
+  --card--footer--color: transparent;
+  --font--black--color:black;
+  --font--gray--color:rgb(175, 173, 173);
+  --font--white--color:white;
+  --font--header--title--color:rgb(254, 252, 252);
+  --font--header--menu--color:rgb(239, 229, 229);
+  --font--input--title:black;
+  --font--intput--color:#072b39;
+  --font--button--background--color:#073d51;
+  --font--button--color:rgb(246, 243, 243);
+  --profile--box--color:rgb(228, 237, 237);
+  --profile--box--year-box--color:rgb(207, 229, 230);
+  --font--header--size--menu:11px;
+  --bg--header--menu:#134051;
+  --fontweight--input:500;
 }
 
 body {
@@ -9,23 +30,21 @@ body {
   font-family: Montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(139, 8, 8);;
-
+  background-color:var(--app--background);
+  zoom: 88%;
+  caret: var(--font--button--color);
 }
 
 
 
-*{
+*{  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Montserrat;
-  font-size: 12.5px;
+  font-size: 13px;
   letter-spacing: 1px;
 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
