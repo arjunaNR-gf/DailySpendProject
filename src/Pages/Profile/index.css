@@ -29,7 +29,7 @@
 
 
 .year--exspend {
-    width: 100px;
+    width: 150px;
     height: 100px;
     border-radius: 50%;
     background-color: var(--profile--box--year-box--color);
@@ -70,7 +70,7 @@
 }
 
 .year--exspend>span{
-    padding: 4px 2px;
+    padding: 2px 2px;
     border-radius: 10px;
     background-color: rgb(232, 235, 237);
     color: rgb(36, 6, 6);
