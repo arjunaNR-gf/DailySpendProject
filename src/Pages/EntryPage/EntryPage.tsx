@@ -75,7 +75,12 @@ const EntryPage = () => {
                     }))
                     setTimeout(() => {
                         Refresh();
+                        
                     }, 10);
+
+                    setTimeout(() => {
+                        CloseFun();
+                    }, 700);
                 }
                 else {
                     setNotification((prevStatus) => ({

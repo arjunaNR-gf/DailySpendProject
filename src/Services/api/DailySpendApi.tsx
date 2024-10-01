@@ -50,7 +50,6 @@ const data =
 
 }
 const pushSpendMoney = (data: IMoney) => {
-    console.log(data, "dt")
     return ClientApi.post('DailSpend', data)
 }
 const postTradeBuy = (data: ITrade) => {

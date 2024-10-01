@@ -6,7 +6,4 @@ const ClientApi =  axios.create({
         //'Authorization': 'token <your-token-here>
       }
     });
-
-
-
 export default ClientApi;
