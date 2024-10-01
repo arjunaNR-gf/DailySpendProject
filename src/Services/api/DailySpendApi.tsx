@@ -6,7 +6,7 @@ import IMoney from "./ApiInterface";
 const data =
 {
     "CalculationEntryHome": {
-        "CalculationEntryHomeTitle": "!!!The Daily Spend!!!",
+        "CalculationEntryHomeTitle": "!!!The Daily Spend M!!!",
         "CalculationHomePopup": {
             "contentSuccess": "Information saved successfully!",
             "contentFailure": "Information not saved!"

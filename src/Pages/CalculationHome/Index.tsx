@@ -6,10 +6,6 @@ import EntryPage from '../EntryPage/EntryPage';
 import HomePage from '../Home/HomePage';
 import Trade from '../Trade/Trade';
 import Profile from '../Profile/Profile';
-import { url } from 'inspector';
-
-
-
 
 const CalculationEntryHome = () => {
     const DailSpendEntryPage = 'https://arjunanr-gf.github.io/DailySpendLocal/'
