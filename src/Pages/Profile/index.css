@@ -7,7 +7,7 @@
 
 .profile--yearly {
     width: 200px;
-    height: 300px;
+    height: 200px;
     background-color: var(--profile--box--color);
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
 
 .year--exspend {
     width: 150px;
-    height: 140px;
+    height: 32px;
      border-radius: 5%;
     background-color: var(--card--header--color);;
     display: flex;

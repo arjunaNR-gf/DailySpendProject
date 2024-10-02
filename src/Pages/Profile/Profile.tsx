@@ -135,10 +135,10 @@ const Profile = () => {
                     <div className='profile--yearly'>
                         {inputField.month !== '' &&
                             <div className='year--exspend'>
-                                <h5>{total.Month}</h5>
+                                <h5 style={{color:'white'}}>{total.Month}</h5>
                             </div>
                         }
-                        <span><p><strong>{inputField.month}</strong> Expenditure</p></span>
+                        <span><strong>{inputField.month}</strong> </span>
                         <Dropdown dataAry={menuMonth !== undefined ? menuMonth : []} placeholder='SELECT MONTH' size='small' name='month' value={inputField.month} onclick={dropdown_Click}></Dropdown>
                     </div>
                 </div>
