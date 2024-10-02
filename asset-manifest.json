@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/DailySpendProject/static/css/main.bd277f1e.css",
-    "main.js": "/DailySpendProject/static/js/main.6c96d139.js",
+    "main.css": "/DailySpendProject/static/css/main.b8ee3ac3.css",
+    "main.js": "/DailySpendProject/static/js/main.6f37ebe3.js",
     "static/js/23.d89cb503.chunk.js": "/DailySpendProject/static/js/23.d89cb503.chunk.js",
     "static/js/81.7f2f0ab6.chunk.js": "/DailySpendProject/static/js/81.7f2f0ab6.chunk.js",
     "static/js/787.194ae5ba.chunk.js": "/DailySpendProject/static/js/787.194ae5ba.chunk.js",
     "static/media/Poppins-Medium.ttf": "/DailySpendProject/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
     "index.html": "/DailySpendProject/index.html",
-    "main.bd277f1e.css.map": "/DailySpendProject/static/css/main.bd277f1e.css.map",
-    "main.6c96d139.js.map": "/DailySpendProject/static/js/main.6c96d139.js.map",
+    "main.b8ee3ac3.css.map": "/DailySpendProject/static/css/main.b8ee3ac3.css.map",
+    "main.6f37ebe3.js.map": "/DailySpendProject/static/js/main.6f37ebe3.js.map",
     "23.d89cb503.chunk.js.map": "/DailySpendProject/static/js/23.d89cb503.chunk.js.map",
     "81.7f2f0ab6.chunk.js.map": "/DailySpendProject/static/js/81.7f2f0ab6.chunk.js.map",
     "787.194ae5ba.chunk.js.map": "/DailySpendProject/static/js/787.194ae5ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd277f1e.css",
-    "static/js/main.6c96d139.js"
+    "static/css/main.b8ee3ac3.css",
+    "static/js/main.6f37ebe3.js"
   ]
 }
