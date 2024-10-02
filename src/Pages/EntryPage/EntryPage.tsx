@@ -121,7 +121,6 @@ const EntryPage = () => {
         }).catch((error: any) => {
             if (error.message === 'ERR_NETWORK') {
                 setLastUpdate('offline')
-                console.log("hello")
             }
             else {
                 setLastUpdate('server offline')
@@ -130,12 +129,10 @@ const EntryPage = () => {
         getPaymentMenu().then((res: any) => {
             console.log(res, 'payment')
             setPaymentMenu(res.data)
-            console.log("hello")
 
         }).catch((error: any) => {
             if (error.message === 'ERR_NETWORK') {
                 setLastUpdate('offline')
-                console.log("hello")
             }
             else
             {
@@ -204,13 +201,7 @@ const EntryPage = () => {
                     }
                 </div>
                     : ''}
-
-
 </div>
-
-               
- 
-
 
                 <div className='form_divider--foot'>
                     {(inputField.date !=''&& inputField.amount !='' && inputField.description != '')&&
