@@ -4,7 +4,7 @@ import { data } from '../../Services/api/DailySpendApi';
 import '../CalculationHome/index.css'
 import EntryPage from '../EntryPage/EntryPage';
 import HomePage from '../Home/HomePage';
-import Trade from '../Trade/Trade';
+import Trade, { PushToFirebaseFromSql } from '../Trade/Trade';
 import Profile from '../Profile/Profile';
 
 const CalculationEntryHome = () => {
@@ -48,7 +48,7 @@ const CalculationEntryHome = () => {
 
                 <div className="calculation_input_box">
                     {
-                        route === 0 ? <HomePage /> : route === 1 ? application_Redirect(DailSpendEntryPage) : route == 2 ? <Trade /> : route == 5 ? <Profile /> : ''
+                        route === 0 ? <HomePage /> : route === 1 ? application_Redirect(DailSpendEntryPage) : route == 3 ? <PushToFirebaseFromSql /> : route == 5 ? <Profile /> : ''
 
                     }
                 </div>

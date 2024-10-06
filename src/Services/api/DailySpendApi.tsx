@@ -6,7 +6,7 @@ import IMoney from "./ApiInterface";
 const data =
 {
     "CalculationEntryHome": {
-        "CalculationEntryHomeTitle": "!!!The Daily Spend M!!!",
+        "CalculationEntryHomeTitle": "DailySpend(Service Layer)",
         "CalculationHomePopup": {
             "contentSuccess": "Information saved successfully!",
             "contentFailure": "Information not saved!"
@@ -31,18 +31,18 @@ const data =
                 "routeSN":2 
             },
             {
-                "name": "Account",
+                "name": "Account Data Sync",
                 "active": 1,
                 "routeSN":6
             },
             {
                 "name": "Help",
-                "active": 1,
+                "active": 0,
                 "routeSN":3
             },
             {
                 "name":"Profile",
-                "active":1,
+                "active":0,
                  "routeSN":4
             }
         ]
@@ -95,5 +95,9 @@ const getPaymentMenuByRs=()=>{
     return ClientApi.get('DailSpend/getPaymentMenuByRs')
 }
 
-export { pushSpendMoney, data, postTradeBuy,getPaymentMenu,postTradeSell,getMonthMenu,getShareNames,getOverallBuy,getPlatFormNames,getDailSpendMonthOrYear,getLastUpdateDailySpend,getPaymentMenuByRs }
+const getOverAllMonthDetails=()=>{
+    return ClientApi.get('DailSpend/getOverallMonthDetails')
+}
+
+export { pushSpendMoney, getOverAllMonthDetails,data, postTradeBuy,getPaymentMenu,postTradeSell,getMonthMenu,getShareNames,getOverallBuy,getPlatFormNames,getDailSpendMonthOrYear,getLastUpdateDailySpend,getPaymentMenuByRs }
 

@@ -15,7 +15,7 @@ return(
     <button
     disabled={props.disabled}
     onClick={props.onclick}
-    className={props.size==='full'?'btn_full':props.size==='medium'?'btn_medium':'btn_small'}
+    className={`${props.size==='full'?'btn_full':props.size==='medium'?'btn_medium':'btn_small'}`}
     >
         {props.icon}
         {props.Btext}

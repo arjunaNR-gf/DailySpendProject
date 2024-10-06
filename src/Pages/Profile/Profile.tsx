@@ -18,9 +18,7 @@ const Profile = () => {
     useEffect(() => {
         getMonthMenu().then((res: any) => {
             setMenuMonth(res.data)
-        }
-
-        )
+        })
 
         getDailSpendMonthOrYear(2, "January", "2024").then(res => {
             setTotalSpend((prevState) => ({
@@ -30,7 +28,6 @@ const Profile = () => {
         })
     }, [setMenuMonth, setTotalSpend])
 
-    const month = ['January', 'February']
     const year = ['2023', '2024']
 
     const [inputField, setInputField] = useState({ month: '', year: '' })
@@ -60,7 +57,7 @@ const Profile = () => {
 
     }
 
-    const data  = [
+    const data = [
         { argument: "Monday", value: 10 },
         { argument: "Tuesday", value: 40 },
         { argument: "Wednesday", value: 10 },
@@ -85,15 +82,15 @@ const Profile = () => {
                             <span><p><strong>Income</strong> </p></span>
                             <div className='year--exspend'>
                                 <span>
-                                <h5>{income}</h5>
+                                    <h5>{income}</h5>
                                 </span>
                             </div>
                         </div>
                         <div className='budget--remain-cal--wings'>
                             <span><p><strong>Savings</strong> </p></span>
                             <div className='year--exspend'>
-                            <span>
-                                <h5>{parseInt(income) - parseInt(Buget)}</h5>
+                                <span>
+                                    <h5>{parseInt(income) - parseInt(Buget)}</h5>
                                 </span>
                             </div>
 
@@ -101,16 +98,16 @@ const Profile = () => {
                         <div className='budget--remain-cal--wings'>
                             <span><p><strong>E-Budget</strong> </p></span>
                             <div className='year--exspend'>
-                            <span>
-                                <h5>2,30,0000</h5>
+                                <span>
+                                    <h5>2,30,0000</h5>
                                 </span>
                             </div>
                         </div>
                         <div className='budget--remain-cal--wings'>
                             <span><p><strong>Remaining-A-E</strong></p></span>
                             <div className='year--exspend'>
-                            <span>
-                                <h5>{230000 - parseInt(totalSpend.total)}</h5>
+                                <span>
+                                    <h5>{230000 - parseInt(totalSpend.total)}</h5>
                                 </span>
                             </div>
                         </div>
@@ -122,8 +119,8 @@ const Profile = () => {
                     <div className='profile--yearly'>
                         {inputField.year !== '' &&
                             <div className='year--exspend'>
-                                 <span>
-                                <h5>{total.Year}</h5>
+                                <span>
+                                    <h5>{total.Year}</h5>
                                 </span>
                             </div>
                         }
@@ -135,14 +132,14 @@ const Profile = () => {
                     <div className='profile--yearly'>
                         {inputField.month !== '' &&
                             <div className='year--exspend'>
-                                <h5 style={{color:'white'}}>{total.Month}</h5>
+                                <h5 style={{ color: 'white' }}>{total.Month}</h5>
                             </div>
                         }
                         <span><strong>{inputField.month}</strong> </span>
                         <Dropdown dataAry={menuMonth !== undefined ? menuMonth : []} placeholder='SELECT MONTH' size='small' name='month' value={inputField.month} onclick={dropdown_Click}></Dropdown>
                     </div>
                 </div>
-                
+
             </div>
         </>
     )
