@@ -55,7 +55,7 @@ const PushToFirebaseFromSql = () => {
     return (
         <>
         <div className='sync-btn'></div>
-            <Button size='full' Btext='FireBasePush'  onclick={() => { FireBasePushFromSql() }} />
+            <Button size='full' Btext='Sync'  onclick={() => { FireBasePushFromSql() }} />
         </>
     )
 }
