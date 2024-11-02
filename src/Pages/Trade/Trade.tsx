@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Button from '../../Component/Button';
-import { getDailSpendMonthOrYear, getOverAllMonthDetails, getPaymentMenu } from '../../Services/api/DailySpendApi';
+import { getDailSpendMonthOrYear, getDailySpendInfo, getOverAllMonthDetails, getPaymentMenu } from '../../Services/api/DailySpendApi';
 import { app } from '../../Services/FireBaseDB/Configuration';
 import './index.css'
 import { getDatabase, push, ref, set, get, remove } from 'firebase/database';
@@ -56,6 +56,35 @@ const PushToFirebaseFromSql = () => {
         })
     }
 
+    const PushDailySpendInfo=()=>{
+     const DailyspendInfo = 'DailySpend/Profile/DailyspendInfo'
+
+        getDailySpendInfo().then(async (res) => {
+            if (res.status == '200') {
+
+                const getData = await Get_sync(DailyspendInfo)
+                if (getData.exists()) {
+                    const tempDB = getData.val()
+                    const tempData = Object.keys(tempDB).map((key, i) => {
+                        return key
+                    })
+
+                    await Delete_Sync(DailyspendInfo+'/', tempData[0]);
+
+
+                    await Push_Sync(DailyspendInfo, res.data);
+
+                }
+                else {
+
+                    await Push_Sync(DailyspendInfo, res.data);
+                }
+            }
+        }).catch((err) => {
+            console.log(" server error!!!")
+        })
+    }
+
     const PaymentMenu_sync = () => {
         const addressPayment='DailySpend/Payment/DropDownList'
         getPaymentMenu().then(async (res) => {
@@ -80,6 +109,7 @@ const PushToFirebaseFromSql = () => {
         //used to handle over all spend per month and year
         OverAllSpendPush_Sync();
         PaymentMenu_sync();
+        PushDailySpendInfo();
     }
 
     return (

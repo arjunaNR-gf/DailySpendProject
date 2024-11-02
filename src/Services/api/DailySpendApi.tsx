@@ -98,6 +98,9 @@ const getPaymentMenuByRs=()=>{
 const getOverAllMonthDetails=()=>{
     return ClientApi.get('DailSpend/getOverallMonthDetails')
 }
+const getDailySpendInfo=()=>{
+    return ClientApi.get('DailSpend/getSelectDailySpendInfo')
+}
 
-export { pushSpendMoney, getOverAllMonthDetails,data, postTradeBuy,getPaymentMenu,postTradeSell,getMonthMenu,getShareNames,getOverallBuy,getPlatFormNames,getDailSpendMonthOrYear,getLastUpdateDailySpend,getPaymentMenuByRs }
+export { pushSpendMoney, getOverAllMonthDetails,data, getDailySpendInfo,postTradeBuy,getPaymentMenu,postTradeSell,getMonthMenu,getShareNames,getOverallBuy,getPlatFormNames,getDailSpendMonthOrYear,getLastUpdateDailySpend,getPaymentMenuByRs }
 
