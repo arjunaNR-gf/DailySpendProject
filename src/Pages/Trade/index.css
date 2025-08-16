@@ -27,14 +27,20 @@ tr{
 
 .sync-btn{
     margin-top: 19%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 button.btn_full {
     background:rgb(82, 208, 208);
     height: 100px;
+    width: auto;
+    padding: 0.43rem 0.43rem;
     color: black;
     letter-spacing: 1.2px !important;
-    font-size: 2.6rem;
+    font-size: 1.6rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    border-radius: 5.2rem;
+    border-radius: 2.2rem;
 }

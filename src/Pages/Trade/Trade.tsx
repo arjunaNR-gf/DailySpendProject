@@ -27,6 +27,8 @@ const PushToFirebaseFromSql = () => {
         remove(firebaseConfig(pathLoc + id))
     }
 
+
+    //this use to push all data by yearly base and rarely use
     const OverAllSpendPush_Sync = () => {
         const overAllSpendAddress = 'DailySpend/Profile/OverAllSpendMonth'
 
@@ -35,15 +37,18 @@ const PushToFirebaseFromSql = () => {
 
                 const getData = await Get_sync(overAllSpendAddress)
                 if (getData.exists()) {
+                    console.log('data exist!')
                     const tempDB = getData.val()
                     const tempData = Object.keys(tempDB).map((key, i) => {
                         return key
                     })
 
+                    for(let i = 0 ;i<tempData.length;i++)
                     await Delete_Sync(overAllSpendAddress+'/', tempData[0]);
 
-
+                    setTimeout(async () => {
                     await Push_Sync(overAllSpendAddress, res.data);
+                    }, 30);
 
                 }
                 else {
@@ -56,6 +61,7 @@ const PushToFirebaseFromSql = () => {
         })
     }
 
+    //this use to send all spend details by dateof spend of each element
     const PushDailySpendInfo=()=>{
      const DailyspendInfo = 'DailySpend/Profile/DailyspendInfo'
 
@@ -68,11 +74,12 @@ const PushToFirebaseFromSql = () => {
                     const tempData = Object.keys(tempDB).map((key, i) => {
                         return key
                     })
+                    for(let i = 0 ;i<tempData.length;i++)
+                    await Delete_Sync(DailyspendInfo+'/', tempData[i]);
 
-                    await Delete_Sync(DailyspendInfo+'/', tempData[0]);
-
-
+                    setTimeout(async () => {
                     await Push_Sync(DailyspendInfo, res.data);
+                    }, 30);
 
                 }
                 else {
@@ -85,18 +92,22 @@ const PushToFirebaseFromSql = () => {
         })
     }
 
+    //just for menu purpose
     const PaymentMenu_sync = () => {
         const addressPayment='DailySpend/Payment/DropDownList'
         getPaymentMenu().then(async (res) => {
             const getData = await Get_sync(addressPayment)
             if (getData.exists()) {
                 const tempDB = getData.val()
-                const dataID = Object.keys(tempDB).map((key, i) => {
+                const tempData = Object.keys(tempDB).map((key, i) => {
                     return key
-                })[0]
-                console.log(dataID,'data id')
-                await Delete_Sync(addressPayment+'/',dataID)
+                })
+                for(let i = 0 ;i<tempData.length;i++)
+                await Delete_Sync(addressPayment+'/',tempData[i])
+
+                setTimeout(async () => {
                 await Push_Sync(addressPayment, res.data)
+                },30)
             }else
             {
                 Push_Sync(addressPayment, res.data)
@@ -105,17 +116,18 @@ const PushToFirebaseFromSql = () => {
     }
 
 
-    const FireBasePushFromSql = () => {
-        //used to handle over all spend per month and year
-        OverAllSpendPush_Sync();
-        PaymentMenu_sync();
-        PushDailySpendInfo();
-    }
+
 
     return (
         <>
-            <div className='sync-btn'></div>
-            <Button size='full' Btext='Sync' onclick={() => { FireBasePushFromSql() }} />
+            <div className='sync-btn'>
+            <Button size='full' Btext='Payment Menu' onclick={() => { PaymentMenu_sync() }} />
+            <Button size='full' Btext='Year Spend  ' onclick={() => { OverAllSpendPush_Sync() }} />
+            <Button size='full' Btext='Day Spend' onclick={() => { PushDailySpendInfo() }} />
+
+
+            </div>
+            
         </>
     )
 }

@@ -4,7 +4,7 @@ import { data } from '../../Services/api/DailySpendApi';
 import '../CalculationHome/index.css'
 import EntryPage from '../EntryPage/EntryPage';
 import HomePage from '../Home/HomePage';
-import Trade, { PushToFirebaseFromSql } from '../Trade/Trade';
+import { PushToFirebaseFromSql } from '../Trade/Trade';
 import Profile from '../Profile/Profile';
 
 const CalculationEntryHome = () => {
@@ -13,7 +13,8 @@ const CalculationEntryHome = () => {
 
     const [route, setRoute] = useState<number>(0)
 
-    const application_Redirect=(urlData)=>{
+    const application_Redirect=(urlData:any
+    )=>{
         window.location.replace(urlData);
     }
 
